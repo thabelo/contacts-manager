@@ -29,7 +29,7 @@
 		<input type="text" id="searchData" placeholder="Search Contacts" class="wide80" />
 		<div class="button orange wide20 search-button" id="searchButton" type="submit"> Search </div>
 	</div>
-	<div class="search-results"> </div>
+	<div class="search-results wide50"> </div>
 </div>
 <div class="clear"> </div>
 

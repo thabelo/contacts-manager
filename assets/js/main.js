@@ -53,7 +53,11 @@ function Application () {
 					break;
 
 					case 13: // enter
-						location.href = href="../../../application/Views/Contacts/user_contacts.php?user=" + app.selectedUserId;
+						if (typeof(app.selectedUserId) == "undefined") {
+							location.href = "../../../application/Views/Contacts/search.php?search=" + $("#searchData").val();
+ 						} else {
+							location.href = href="../../../application/Views/Contacts/user_contacts.php?user=" + app.selectedUserId;
+						}
 					break;
 
 					default: return; // exit this handler for other keys

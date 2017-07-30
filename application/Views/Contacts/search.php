@@ -36,6 +36,7 @@ $contacts = $contactsData->searchContacts($_GET['search']);
 				$users = $users->findById($contact['Contacts']['users_id']);
 			}
 		?>
+		<? if ($users['User']['firstname']) { ?>
 		<tr>
 			<td> <?php echo ucfirst($users['User']['firstname'])." ".ucfirst($users['User']['lastname']); ?></td>
 			<td> <?php echo $contact['Contacts']['value']; ?></td>
@@ -43,6 +44,7 @@ $contacts = $contactsData->searchContacts($_GET['search']);
 			<td> <a class="button green" href="edit.php?id=<?php echo $contact['Contacts']['id']; ?>">Edit </a></td>
 			<td> <a class="button red" href="delete.php?id=<?php echo $contact['Contacts']['id']; ?>">Delete </a></td>
 		</tr>
+			<?php } ?>
 		<?php } ?>
 	</table>
 </body>

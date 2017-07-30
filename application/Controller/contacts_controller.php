@@ -47,7 +47,6 @@ class ContactsController extends Controller {
 
 		if (!$results) {
 			$this->Flash->error("Search not found");
-			$this->redirect($_SERVER['HTTP_REFERER']);
 		} 
 		return $results;
 	}
@@ -70,8 +69,11 @@ class ContactsController extends Controller {
 	}
 	public function findAllUserContacts($user_id) {
 		$contacts['Contacts'] = array("conditions"=>array("users_id" => $user_id));
-		$data = $this->Contacts->find($contacts);
-		return $data;
+		$results = $this->Contacts->find($contacts);
+		if (!$results ) {
+			$this->Flash->error("No contacts found for this user, pleae add contacts");
+		}
+		return $results;
 	}
 
 	public function findById($id = null) {
