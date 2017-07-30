@@ -1,7 +1,7 @@
 # contacts-manager
 Manage user contacts
 
-1. Copy all contents of contacts-manager.zip and unzip the file or clone git clone 1. https://github.com/thabelo/contacts-manager.git repo into your server directory.
+1. Copy all contents of contacts-manager.zip and unzip the file or clone git clone https://github.com/thabelo/contacts-manager.git repo into your server directory.
 2. Copy file `application/Config/database.conf.sample.php` and rename to `application/Config/database.conf.php` into same directory then edit the file to match your database settings.
 ```
 	public $default = array(
