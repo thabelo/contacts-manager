@@ -13,5 +13,5 @@ Manage user contacts
 		'database' => 'contacts',	// HOST DATABASE (*Optional to change)
 	);
 ```
-3. Navigate to agsworld and application should take you to the admin page and install the database and intialize tables.
+3. Using your browser navigate to contacts-manager and application should take you to the admin page and install the database and intialize tables.
 	
