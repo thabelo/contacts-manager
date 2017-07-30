@@ -14,7 +14,8 @@ class UsersController extends Controller{
 	
 	public function findAllUsers(){
 		$results = $this->User->find("all");
-		if (!$results ) {
+		if (!$results) {
+			echo 'Data';
 			$this->Flash->error("No Users found, pleae add users");
 		}
 		return $results;

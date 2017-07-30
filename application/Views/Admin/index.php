@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-	<?php include "../elements/header.php"; ?>
+	<?php include "../elements/header-admin.php"; ?>
 </head>
 <body>
 	<form action="../../Controller/users_controller.php" method="post">

@@ -71,7 +71,7 @@ class ContactsController extends Controller {
 		$contacts['Contacts'] = array("conditions"=>array("users_id" => $user_id));
 		$results = $this->Contacts->find($contacts);
 		if (!$results ) {
-			$this->Flash->error("No contacts found for this user, pleae add contacts");
+			//$this->Flash->error("No contacts found for this user, pleae add contacts");
 		}
 		return $results;
 	}
